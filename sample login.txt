@@ -1,0 +1,34 @@
+<div class="page-login">
+                    <div class="login-page pull-right online_bg mp-4">
+                        <div class="form-validation mt-20">
+                            <h4>Employee Login</h4>
+                            <form name="LoginDetails_St" class="ng-pristine ng-invalid ng-invalid-required">
+                                <div class="form-group">
+                                    <i class="fa fa-user"></i>
+                                    <input type="text" placeholder="Enter Student Roll No/Enrollment No." tabindex="0" ng-model="empcode" class="form-control underline-input ng-pristine ng-untouched ng-invalid ng-invalid-required" required="">
+                                </div>
+
+                                <div class="form-group">
+                                    <i class="fa fa-unlock-alt"></i>
+                                    <input type="password" ng-model="password" placeholder="Enter Your Password" class="form-control underline-input ng-pristine ng-untouched ng-invalid ng-invalid-required" required="">
+                                </div>
+
+                                <div class="form-group dp_ful">
+                                    <span class="re flt mr10" ng-click="Captha()" style="cursor:pointer;"><i class="glyphicon glyphicon-refresh"></i></span>
+                                    <span class="rand1 captcha_txt flt mr10 ng-binding">23</span>
+                                    <span class="captcha_txt flt mr10">+</span>
+                                    <span class="rand2 captcha_txt flt mr10 ng-binding">3</span>
+                                    <span class="captcha_txt flt mr10">=</span>
+                                    <span class="captcha_txt flt pull-right">
+                                        <input type="text" id="" placeholder="Prove you are a human" autocomplete="off" class="form-control ng-pristine ng-untouched ng-invalid ng-invalid-required" ng-model="Caltotal" only-digits="" required="">
+                                    </span>
+                                </div>
+
+                                <div class="form-group text-left ">
+                                    <button class="btn btn-greensea b-0 br-2 mr-5 animated-button thar-two" ng-click="Login(LoginDetails_St.$valid)"> Login</button>
+                                    <a class="frgt" ng-click="ForgotPwd()" data-toggle="modal" data-target="#ViewPopup">Forget password?</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
